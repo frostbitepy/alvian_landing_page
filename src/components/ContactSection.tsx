@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
@@ -68,19 +68,19 @@ export default function ContactSection() {
     {
       icon: EnvelopeIcon,
       title: 'Email',
-      content: 'info@alvian.com',
-      link: 'mailto:info@alvian.com'
+      content: 'operaciones@alvianconsultoria.com.py',
+      link: 'mailto:operaciones@alvianconsultoria.com.py'
     },
     {
       icon: PhoneIcon,
-      title: 'Teléfono',
+      title: 'TelÃ©fono',
       content: '+1 (555) 123-4567',
       link: 'tel:+15551234567'
     },
     {
       icon: MapPinIcon,
-      title: 'Ubicación',
-      content: 'Encarnación, Paraguay',
+      title: 'UbicaciÃ³n',
+      content: 'EncarnaciÃ³n, Paraguay',
       link: '#'
     },
     {
@@ -101,17 +101,17 @@ export default function ContactSection() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-slate-blue to-slate-navy rounded-full flex items-center justify-center">
+            <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-blue-600 to-slate-700 rounded-full flex items-center justify-center">
               <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             </div>
             <h2 className="text-4xl font-bold text-slate-900 mb-6">
-              ¡Mensaje Enviado!
+              Â¡Mensaje Enviado!
             </h2>
             <p className="text-xl text-slate-600 mb-8">
-              Gracias por tu interés en Alvian. Nuestro equipo se pondrá en contacto 
-              contigo dentro de las próximas 24 horas para programar una demo personalizada.
+              Gracias por tu interÃ©s en Alvian. Nuestro equipo se pondrÃ¡ en contacto 
+              contigo dentro de las prÃ³ximas 24 horas para programar una demo personalizada.
             </p>
             <motion.button
               onClick={() => {
@@ -149,7 +149,7 @@ export default function ContactSection() {
         >
           <h2 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl mb-6">
             Comencemos a{' '}
-            <span className="bg-gradient-to-r from-slate-blue to-slate-navy bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 to-slate-700 bg-clip-text text-transparent">
               Trabajar Juntos
             </span>
           </h2>
@@ -175,7 +175,7 @@ export default function ContactSection() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-slate-900 mb-2">
                     Nombre *
                   </label>
                   <input
@@ -185,13 +185,13 @@ export default function ContactSection() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200 text-slate-900"
                     placeholder="Tu nombre completo"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-slate-900 mb-2">
                     Email *
                   </label>
                   <input
@@ -201,7 +201,7 @@ export default function ContactSection() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200 text-slate-900"
                     placeholder="tu.email@empresa.com"
                   />
                 </div>
@@ -209,7 +209,7 @@ export default function ContactSection() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="company" className="block text-sm font-medium text-slate-900 mb-2">
                     Empresa *
                   </label>
                   <input
@@ -219,14 +219,14 @@ export default function ContactSection() {
                     required
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200 text-slate-900"
                     placeholder="Nombre de tu empresa"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                    Teléfono
+                  <label htmlFor="phone" className="block text-sm font-medium text-slate-900 mb-2">
+                    TelÃ©fono
                   </label>
                   <input
                     type="tel"
@@ -234,36 +234,36 @@ export default function ContactSection() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200 text-slate-900"
                     placeholder="+1 (555) 123-4567"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="serviceType" className="block text-sm font-medium text-gray-700 mb-2">
-                  Servicio de Interés
+                <label htmlFor="serviceType" className="block text-sm font-medium text-slate-900 mb-2">
+                  Servicio de InterÃ©s
                 </label>
                 <select
                   id="serviceType"
                   name="serviceType"
                   value={formData.serviceType}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200 text-slate-900"
                 >
                   <option value="">Selecciona un servicio</option>
                   <option value="dashboards">Dashboards Power BI</option>
                   <option value="analytics">Analytics con IA</option>
                   <option value="bi-strategy">Estrategia de BI</option>
-                  <option value="integration">Integración de Datos</option>
+                  <option value="integration">IntegraciÃ³n de Datos</option>
                   <option value="compliance">Cumplimiento y Seguridad</option>
-                  <option value="training">Capacitación</option>
-                  <option value="consulting">Consultoría Completa</option>
+                  <option value="training">CapacitaciÃ³n</option>
+                  <option value="consulting">ConsultorÃ­a Completa</option>
                 </select>
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-slate-900 mb-2">
                   Mensaje *
                 </label>
                 <textarea
@@ -273,7 +273,7 @@ export default function ContactSection() {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200 text-slate-900"
                   placeholder="Cuéntanos sobre tu proyecto y qué necesitas..."
                 />
               </div>
@@ -321,7 +321,7 @@ export default function ContactSection() {
           >
             <div className="bg-white rounded-3xl p-8 shadow-xl">
               <h3 className="text-2xl font-bold text-gray-900 mb-8">
-                Información de Contacto
+                InformaciÃ³n de Contacto
               </h3>
               
               <div className="space-y-6">
@@ -353,7 +353,7 @@ export default function ContactSection() {
 
             <div className="bg-gradient-to-r from-slate-600 to-slate-700 rounded-3xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">
-                ¿Por qué elegir Alvian?
+                Â¿Por quÃ© elegir Alvian?
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-center">
@@ -372,7 +372,7 @@ export default function ContactSection() {
                   <svg className="w-5 h-5 mr-3 text-blue-200" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Implementación en semanas, no meses
+                  ImplementaciÃ³n en semanas, no meses
                 </li>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 mr-3 text-blue-200" fill="currentColor" viewBox="0 0 20 20">

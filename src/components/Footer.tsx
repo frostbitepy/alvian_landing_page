@@ -206,7 +206,7 @@ export default function Footer() {
 
         {/* Newsletter */}
         <motion.div
-          className="mt-12 pt-8 border-t border-slate-navy"
+          className="mt-12 pt-8 border-t border-slate-700"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -242,7 +242,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <motion.div
-          className="mt-12 pt-8 border-t border-slate-navy"
+          className="mt-12 pt-8 border-t border-slate-700"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}

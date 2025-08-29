@@ -164,7 +164,7 @@ export default function AboutSection() {
                 viewport={{ once: true }}
                 whileHover={{ y: -5 }}
               >
-                <div className="flex items-center justify-center w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-slate-light-blue/20 to-slate-blue/20 group-hover:from-slate-blue group-hover:to-slate-navy transition-all duration-300">
+                <div className="flex items-center justify-center w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-100 to-blue-200 group-hover:from-blue-600 group-hover:to-slate-700 transition-all duration-300">
                   <value.icon className="h-8 w-8 text-slate-600 group-hover:text-white transition-colors duration-300" />
                 </div>
                 <h4 className="text-xl font-bold text-slate-900 mb-4">

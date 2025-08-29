@@ -59,7 +59,7 @@ export default function Header() {
           <button
             type="button"
             className={`-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 ${
-              scrolled ? 'text-gray-700' : 'text-white'
+              scrolled ? 'text-slate-900' : 'text-white'
             }`}
             onClick={() => setMobileMenuOpen(true)}
           >
@@ -128,7 +128,7 @@ export default function Header() {
                 </a>
                 <button
                   type="button"
-                  className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                  className="-m-2.5 rounded-md p-2.5 text-slate-900"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   <span className="sr-only">Cerrar menú</span>

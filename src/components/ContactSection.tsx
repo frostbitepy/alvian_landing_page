@@ -21,16 +21,40 @@ export default function ContactSection() {
 
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState('')
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setError('')
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch('https://formspree.io/f/mgvlobzq', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitted(true)
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          phone: '',
+          message: '',
+          serviceType: ''
+        })
+      } else {
+        setError('Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.')
+      }
+    } catch (err) {
+      setError('Error de conexión. Por favor, verifica tu internet e intenta nuevamente.')
+    } finally {
       setIsSubmitting(false)
-      setSubmitted(true)
-    }, 2000)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -253,6 +277,17 @@ export default function ContactSection() {
                   placeholder="Cuéntanos sobre tu proyecto y qué necesitas..."
                 />
               </div>
+
+              {/* Error Message */}
+              {error && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6"
+                >
+                  <p className="text-red-600 text-sm">{error}</p>
+                </motion.div>
+              )}
 
               <motion.button
                 type="submit"

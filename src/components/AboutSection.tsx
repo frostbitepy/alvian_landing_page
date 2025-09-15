@@ -64,7 +64,7 @@ export default function AboutSection() {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
-          {/* Story */}
+          {/* Story - COMENTADO TEMPORALMENTE
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -96,8 +96,9 @@ export default function AboutSection() {
               </p>
             </div>
           </motion.div>
+          */}
 
-          {/* Achievements */}
+          {/* Achievements - COMENTADO TEMPORALMENTE
           <motion.div
             className="bg-white rounded-3xl p-8 shadow-xl"
             initial={{ opacity: 0, x: 30 }}
@@ -141,6 +142,7 @@ export default function AboutSection() {
               </p>
             </motion.div>
           </motion.div>
+          */}
         </div>
 
         {/* Values */}

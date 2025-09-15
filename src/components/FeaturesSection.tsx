@@ -100,7 +100,7 @@ export default function FeaturesSection() {
           ))}
         </div>
 
-        {/* Stats Section */}
+        {/* Stats Section - COMENTADO TEMPORALMENTE
         <motion.div
           className="bg-gradient-to-r from-slate-600 to-slate-700 rounded-3xl p-12 text-center"
           initial={{ opacity: 0, y: 30 }}
@@ -138,6 +138,7 @@ export default function FeaturesSection() {
             ))}
           </div>
         </motion.div>
+        */}
 
         {/* Demo Section */}
         <motion.div

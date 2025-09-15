@@ -5,8 +5,7 @@ import { motion } from 'framer-motion'
 import { 
   EnvelopeIcon,
   PhoneIcon,
-  MapPinIcon,
-  ClockIcon
+  MapPinIcon
 } from '@heroicons/react/24/outline'
 
 export default function ContactSection() {
@@ -73,20 +72,14 @@ export default function ContactSection() {
     },
     {
       icon: PhoneIcon,
-      title: 'TelÃ©fono',
-      content: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      title: 'Teléfono',
+      content: '+595 971 369278',
+      link: 'tel:+595971369278'
     },
     {
       icon: MapPinIcon,
-      title: 'UbicaciÃ³n',
-      content: 'EncarnaciÃ³n, Paraguay',
-      link: '#'
-    },
-    {
-      icon: ClockIcon,
-      title: 'Horarios',
-      content: 'Lun - Vie: 9:00 - 18:00',
+      title: 'Ubicación',
+      content: 'Encarnación, Paraguay',
       link: '#'
     }
   ]
@@ -107,11 +100,11 @@ export default function ContactSection() {
               </svg>
             </div>
             <h2 className="text-4xl font-bold text-slate-900 mb-6">
-              Â¡Mensaje Enviado!
+              ¡Mensaje Enviado!
             </h2>
             <p className="text-xl text-slate-600 mb-8">
-              Gracias por tu interÃ©s en Alvian. Nuestro equipo se pondrÃ¡ en contacto 
-              contigo dentro de las prÃ³ximas 24 horas para programar una demo personalizada.
+              Gracias por tu interés en Alvian. Nuestro equipo se pondrá en contacto
+              contigo dentro de las próximas 24 horas para programar una demo personalizada.
             </p>
             <motion.button
               onClick={() => {
@@ -226,7 +219,7 @@ export default function ContactSection() {
                 
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-slate-900 mb-2">
-                    TelÃ©fono
+                    Teléfono
                   </label>
                   <input
                     type="tel"
@@ -235,14 +228,14 @@ export default function ContactSection() {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200 text-slate-900"
-                    placeholder="+1 (555) 123-4567"
+                    placeholder="Ingresa tu teléfono"
                   />
                 </div>
               </div>
 
               <div>
                 <label htmlFor="serviceType" className="block text-sm font-medium text-slate-900 mb-2">
-                  Servicio de InterÃ©s
+                  Servicio de Interés
                 </label>
                 <select
                   id="serviceType"
@@ -321,7 +314,7 @@ export default function ContactSection() {
           >
             <div className="bg-white rounded-3xl p-8 shadow-xl">
               <h3 className="text-2xl font-bold text-gray-900 mb-8">
-                InformaciÃ³n de Contacto
+                Información de Contacto
               </h3>
               
               <div className="space-y-6">
@@ -353,7 +346,7 @@ export default function ContactSection() {
 
             <div className="bg-gradient-to-r from-slate-600 to-slate-700 rounded-3xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">
-                Â¿Por quÃ© elegir Alvian?
+                ¿Por qué elegir Alvian?
               </h3>
               <ul className="space-y-3">
                 <li className="flex items-center">
@@ -372,7 +365,7 @@ export default function ContactSection() {
                   <svg className="w-5 h-5 mr-3 text-blue-200" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  ImplementaciÃ³n en semanas, no meses
+                  Implementación en semanas, no meses
                 </li>
                 <li className="flex items-center">
                   <svg className="w-5 h-5 mr-3 text-blue-200" fill="currentColor" viewBox="0 0 20 20">

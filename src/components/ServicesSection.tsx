@@ -13,21 +13,15 @@ import {
 const services = [
   {
     icon: DocumentChartBarIcon,
-    title: 'Dashboards Power BI Personalizados',
-    description: 'Creamos dashboards interactivos y personalizados que transforman tus datos financieros en visualizaciones claras y accionables.',
+    title: 'Reportes Personalizados',
+    description: 'Creamos reportes interactivos y personalizados que transforman tus datos financieros en visualizaciones claras y accionables.',
     features: ['Visualizaciones interactivas', 'KPIs personalizados', 'Reportes automatizados', 'Integración en tiempo real']
-  },
-  {
-    icon: CpuChipIcon,
-    title: 'Analytics Avanzado con IA',
-    description: 'Implementamos modelos de machine learning para predecir tendencias, detectar fraudes y optimizar procesos financieros.',
-    features: ['Detección de fraudes', 'Análisis predictivo', 'Segmentación de clientes', 'Optimización de riesgos']
   },
   {
     icon: ChartBarIcon,
     title: 'Business Intelligence Estratégico',
     description: 'Desarrollamos estrategias de BI completas que alinean tus datos con los objetivos de negocio de tu institución.',
-    features: ['Estrategia de datos', 'Arquitectura de BI', 'Gobierno de datos', 'ROI measurable']
+    features: ['Estrategia de datos', 'Arquitectura de BI', 'Gobierno de datos']
   },
   {
     icon: CloudIcon,
@@ -36,16 +30,10 @@ const services = [
     features: ['Migración segura', 'APIs robustas', 'ETL optimizado', 'Sincronización automática']
   },
   {
-    icon: ShieldCheckIcon,
-    title: 'Cumplimiento y Seguridad',
-    description: 'Aseguramos que todos los dashboards y procesos cumplan con las regulaciones financieras más estrictas.',
-    features: ['Cumplimiento normativo', 'Auditorías integradas', 'Seguridad de datos', 'Trazabilidad completa']
-  },
-  {
     icon: AcademicCapIcon,
     title: 'Capacitación y Soporte',
-    description: 'Entrenamos a tu equipo para maximizar el valor de los insights y brindar soporte continuo.',
-    features: ['Training personalizado', 'Soporte 24/7', 'Documentación completa', 'Actualizaciones regulares']
+    description: 'Entrenamos a tu equipo para maximizar el valor de los reportes y brindar soporte continuo.',
+    features: ['Capacitación personalizada', 'Asistencia técnica', 'Documentación completa', 'Actualizaciones regulares']
   }
 ]
 
@@ -72,7 +60,7 @@ export default function ServicesSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <motion.div
               key={service.title}

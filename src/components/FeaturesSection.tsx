@@ -54,7 +54,7 @@ export default function FeaturesSection() {
   return (
     <section id="features" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        {/* Header */}
+        {/* Header y Features Grid - COMENTADO TEMPORALMENTE
         <motion.div
           className="text-center max-w-3xl mx-auto mb-20"
           initial={{ opacity: 0, y: 30 }}
@@ -74,7 +74,6 @@ export default function FeaturesSection() {
           </p>
         </motion.div>
 
-        {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {features.map((feature, index) => (
             <motion.div
@@ -99,6 +98,7 @@ export default function FeaturesSection() {
             </motion.div>
           ))}
         </div>
+        */}
 
         {/* Stats Section - COMENTADO TEMPORALMENTE
         <motion.div
@@ -140,7 +140,7 @@ export default function FeaturesSection() {
         </motion.div>
         */}
 
-        {/* Demo Section */}
+        {/* Demo Section - COMENTADO TEMPORALMENTE
         <motion.div
           className="text-center mt-20 bg-slate-50 rounded-3xl p-12"
           initial={{ opacity: 0, y: 30 }}
@@ -174,6 +174,7 @@ export default function FeaturesSection() {
             </motion.a>
           </div>
         </motion.div>
+        */}
       </div>
     </section>
   )

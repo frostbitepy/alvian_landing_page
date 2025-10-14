@@ -9,15 +9,14 @@ import {
 
 const navigation = {
   servicios: [
-    { name: 'Dashboards Power BI', href: '#services' },
-    { name: 'Analytics con IA', href: '#services' },
+    { name: 'Reportes Personalizados', href: '#services' },
+    { name: 'Automatización de Procesos', href: '#services' },
     { name: 'Business Intelligence', href: '#services' },
-    { name: 'Integración de Datos', href: '#services' },
+    { name: 'Desarrollo de Data Warehouse', href: '#services' },
   ],
   empresa: [
     { name: 'Sobre Nosotros', href: '#about' },
     { name: 'Nuestros Valores', href: '#about' },
-    { name: 'Casos de Éxito', href: '#features' },
     { name: 'Contacto', href: '#contact' },
   ],
   soporte: [
@@ -25,12 +24,6 @@ const navigation = {
     { name: 'Capacitación', href: '#services' },
     { name: 'Soporte Técnico', href: '#contact' },
     { name: 'FAQ', href: '#' },
-  ],
-  legal: [
-    { name: 'Política de Privacidad', href: '#' },
-    { name: 'Términos de Uso', href: '#' },
-    { name: 'Cumplimiento', href: '#' },
-    { name: 'Cookies', href: '#' },
   ]
 }
 
@@ -92,13 +85,13 @@ export default function Footer() {
               </div>
               <div className="flex items-center text-slate-300">
                 <PhoneIcon className="h-5 w-5 mr-3" />
-                <a href="tel:+595971369278" className="hover:text-white transition-colors">
-                  +595 971 369278
+                <a href="tel:+595984345481" className="hover:text-white transition-colors">
+                  +595 984 345481
                 </a>
               </div>
               <div className="flex items-center text-slate-300">
                 <MapPinIcon className="h-5 w-5 mr-3" />
-                <span>Encarnación, Paraguay</span>
+                <span>Asunción, Paraguay</span>
               </div>
             </div>
             <div className="flex space-x-6">
@@ -121,7 +114,7 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <div className="mt-12 xl:mt-0 xl:col-span-2">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -167,24 +160,6 @@ export default function Footer() {
                 <h3 className="text-base font-semibold text-white">Soporte</h3>
                 <ul className="mt-6 space-y-4">
                   {navigation.soporte.map((item) => (
-                    <li key={item.name}>
-                      <a href={item.href} className="text-slate-300 hover:text-white transition-colors text-sm">
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                viewport={{ once: true }}
-              >
-                <h3 className="text-base font-semibold text-white">Legal</h3>
-                <ul className="mt-6 space-y-4">
-                  {navigation.legal.map((item) => (
                     <li key={item.name}>
                       <a href={item.href} className="text-slate-300 hover:text-white transition-colors text-sm">
                         {item.name}
@@ -249,7 +224,7 @@ export default function Footer() {
               </p>
             </div>
             <p className="mt-8 text-slate-300 text-sm md:mt-0 md:order-1">
-              &copy; 2024 Alvian. Todos los derechos reservados.
+              &copy; 2025 Alvian. Todos los derechos reservados.
             </p>
           </div>
         </motion.div>

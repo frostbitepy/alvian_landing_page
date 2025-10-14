@@ -73,13 +73,13 @@ export default function ContactSection() {
     {
       icon: PhoneIcon,
       title: 'Teléfono',
-      content: '+595 971 369278',
-      link: 'tel:+595971369278'
+      content: '+595 984 345481',
+      link: 'tel:+595984345481'
     },
     {
       icon: MapPinIcon,
       title: 'Ubicación',
-      content: 'Encarnación, Paraguay',
+      content: 'Asunción, Paraguay',
       link: '#'
     }
   ]
@@ -142,12 +142,12 @@ export default function ContactSection() {
         >
           <h2 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl mb-6">
             Comencemos a{' '}
-            <span className="bg-gradient-to-r from-blue-600 to-slate-700 bg-clip-text text-transparent">
+            <span className="text-slate-700">
               Trabajar Juntos
             </span>
           </h2>
           <p className="text-xl text-slate-600 leading-8">
-            Estamos listos para ayudarte a transformar tus datos en insights poderosos. 
+            Estamos listos para transformar tus datos accionables en insights poderosos. 
             Agenda una consulta gratuita y descubre el potencial de tus datos.
           </p>
         </motion.div>
@@ -245,13 +245,12 @@ export default function ContactSection() {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all duration-200 text-slate-900"
                 >
                   <option value="">Selecciona un servicio</option>
-                  <option value="dashboards">Dashboards Power BI</option>
-                  <option value="analytics">Analytics con IA</option>
-                  <option value="bi-strategy">Estrategia de BI</option>
-                  <option value="integration">IntegraciÃ³n de Datos</option>
-                  <option value="compliance">Cumplimiento y Seguridad</option>
-                  <option value="training">CapacitaciÃ³n</option>
-                  <option value="consulting">ConsultorÃ­a Completa</option>
+                  <option value="dashboards">Reportes Personalizados</option>
+                  <option value="analytics">Automatización de Procesos</option>
+                  <option value="bi-strategy">Consultoría en Gobernanza de Datos</option>
+                  <option value="integration">Desarrollo de Data Warehouse</option>
+                  <option value="training">Capacitación</option>
+                  <option value="consulting">Consultoría Completa</option>
                 </select>
               </div>
 
@@ -366,12 +365,6 @@ export default function ContactSection() {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                   Implementación en semanas, no meses
-                </li>
-                <li className="flex items-center">
-                  <svg className="w-5 h-5 mr-3 text-blue-200" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Soporte 24/7 especializado
                 </li>
               </ul>
             </div>

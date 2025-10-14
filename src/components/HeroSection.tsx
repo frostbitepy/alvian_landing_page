@@ -58,9 +58,8 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Ayudamos a instituciones financieras a generar insights poderosos con sus datos 
-            mediante dashboards avanzados en Power BI. Convierte información compleja en 
-            estrategias ganadoras.
+            Ayudamos a casas de crédito a generar insights valiosos con sus datos mediante 
+            reportes avanzados. Convertimos información compleja en estrategias ganadoras.
           </motion.p>
 
           <motion.div
@@ -90,14 +89,13 @@ export default function HeroSection() {
 
         {/* Feature Icons */}
         <motion.div
-          className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
+          className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           {[
-            { icon: ChartBarIcon, title: 'Dashboards Avanzados', desc: 'Visualizaciones interactivas' },
-            { icon: CpuChipIcon, title: 'IA & Machine Learning', desc: 'Predicciones inteligentes' },
+            { icon: ChartBarIcon, title: 'Reportes Avanzados', desc: 'Visualizaciones interactivas' },
             { icon: LightBulbIcon, title: 'Insights Accionables', desc: 'Decisiones basadas en datos' }
           ].map((feature) => (
             <motion.div
@@ -115,22 +113,6 @@ export default function HeroSection() {
           ))}
         </motion.div>
       </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-      >
-        <motion.div
-          className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center"
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          <div className="w-1 h-3 bg-white/70 rounded-full mt-2" />
-        </motion.div>
-      </motion.div>
     </section>
   )
 }

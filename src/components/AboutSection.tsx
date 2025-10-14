@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import { 
   CheckCircleIcon,
   SparklesIcon,
-  TrophyIcon,
   HeartIcon
 } from '@heroicons/react/24/outline'
 
@@ -18,11 +17,6 @@ const values = [
     icon: CheckCircleIcon,
     title: 'Precisión Absoluta',
     description: 'Cada dashboard y análisis es meticulosamente revisado para garantizar la máxima precisión.'
-  },
-  {
-    icon: TrophyIcon,
-    title: 'Excelencia Probada',
-    description: 'Track record comprobado con instituciones financieras líderes en Latinoamérica.'
   },
   {
     icon: HeartIcon,
@@ -57,9 +51,8 @@ export default function AboutSection() {
             </span>
           </h2>
           <p className="text-xl text-slate-600 leading-8">
-            Somos un equipo de expertos en data analytics y business intelligence, 
-            especializados en el sector financiero. Nuestra misión es transformar 
-            datos complejos en insights accionables.
+            Somos un equipo de especialistas en business intelligence y análisis de datos. 
+            Nuestra misión es transformar datos complejos en insights accionables.
           </p>
         </motion.div>
 
@@ -155,7 +148,7 @@ export default function AboutSection() {
           <h3 className="text-3xl font-bold text-slate-900 text-center mb-12">
             Nuestros Valores
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {values.map((value, index) => (
               <motion.div
                 key={value.title}
